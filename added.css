@@ -1,0 +1,28 @@
+.header-item {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#menubar {
+  text-align: center;
+}
+
+#menu {
+  float:none;
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
+
+
+#content > .odd-section {
+  background-color: #ffffff;
+}
+
+#content > .odd-section p, #content > .even-section p {
+  display: block;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-left: 0;
+}
