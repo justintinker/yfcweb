@@ -1,3 +1,19 @@
+$(document).on('click', 'a[href="#members"]', function(event){
+    event.preventDefault();
+
+    $("#shade").addClass("shade");
+    $("#members").removeClass("hidden");
+    $("#members").addClass("show");
+
+    $("#shade").click(function() {
+      $("#shade").removeClass("shade");
+      $("#members").removeClass("show");
+      $("#members").addClass("hidden");
+      $("#inc-pass").addClass("hidden");
+      $("#inc-pass").removeClass("show");
+    });
+});
+
 $(document).ready(function() {
 
     // process the form
@@ -7,9 +23,6 @@ $(document).ready(function() {
         var formData = {
             "passphrase" : $("#passphrase").val(),
         };
-
-        console.log(formData);
-
         // process the form
         $.ajax({
             type        : 'POST',
@@ -20,7 +33,14 @@ $(document).ready(function() {
         })
             .done(function(data) {
 
-                console.log(data);
+                if(data["success"]) {
+                  $(location).attr('href',data["link"]);
+                }
+                else {
+                  $("#inc-pass").removeClass("hidden");
+                  $("#inc-pass").addClass("show");
+                }
+
 
             });
 

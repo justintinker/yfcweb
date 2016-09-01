@@ -22,12 +22,20 @@
     transition: all 1s ease;
 }
 
+#inc-pass {
+  color: #880000;
+}
+
 .hidden {
   display: none;
 }
 
-.show {
+#members.show {
   display: block;
+}
+
+#inc-pass.show {
+  display: inline;
 }
 
 .clear {
