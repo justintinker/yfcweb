@@ -3,6 +3,7 @@
   <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <link href="city club assets/style.css" media="screen" rel="stylesheet" type="text/css">
     <link href="css/added.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/form.css" media="screen" rel="stylesheet" type="text/css">
 <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
    <script src="js/jquery.min.js"></script>
     <script src="js/scroll.js"></script>
@@ -54,20 +55,35 @@
         <h3>Forums</h3>
           <p></p>
           </div>
-         </div>
+    </div>
     <div class="odd-section">
+      <div class="container" id="partnerships">
+      <h3>Partnerships</h3>
+        <p></p>
+      </div>
+    </div>
+    <div class="even-section">
       <div class="container" id="apply">
       <h3>Apply</h3>
         <p></p>
       </div>
     </div>
-    <div class="even-section">
+    <div class="odd-section">
       <div class="container" id="contact">
         <h3>Contact</h3>
         <p></p>
       </div>
     </div>
+    <div id="shade"></div>
+    <div id="members" class="login-page form hidden">
+      <h1> Members Area </h1>
+      <form action="php/members.php" method="post" class="login-form">
+        <input id="passphrase" type="password" placeholder="Passphrase"/>
+        <button type="submit"> Enter </button>
+      </form>
+    </div>
 </div>
+
 
 <p id="placeholder" hidden>
   It was the best of times,
