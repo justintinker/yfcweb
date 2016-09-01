@@ -1,4 +1,5 @@
 $(document).ready(function() {
-      $("#content p").html($("#placeholder").html());
+      $("#content > .odd-section p").html($("#placeholder").html());
+      $("#content > .even-section p").html($("#placeholder").html());
 
 });
