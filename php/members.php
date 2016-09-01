@@ -5,6 +5,8 @@ if(strcmp($_POST["passphrase"], $passphrase) === 0) {
   echo '<script type="text/javascript">
            window.location = "' . $drivefolder .'"
       </script>';
+} else {
+  echo $_POST["passphrase"];
 }
 
 ?>
