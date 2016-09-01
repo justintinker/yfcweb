@@ -5,8 +5,10 @@ $(document).ready(function() {
       event.preventDefault();
 
         var formData = {
-            'passphrase' : $("#passphrase").val(),
+            "passphrase" : $("#passphrase").val(),
         };
+
+        console.log(formData);
 
         // process the form
         $.ajax({
